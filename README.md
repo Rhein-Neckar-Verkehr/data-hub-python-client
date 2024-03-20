@@ -28,25 +28,30 @@ some of them are described here.
 
 ## Prepare credentials
 
-The client for node.js is in this repo in the node/ folder. 
-
 1. Download the graphql.http file to this repo and place it in the root path. 
 2. Download the preparation script from gist (see below)
-3. Run the shell script ./prepare_env_file.sh this will generate a .env file which is read by the node.js application
+3. Run the shell script ./prepare_env_file.sh this will generate a .env file which is read by the application
 
 ### On Unix/Mac/Linux 
-You can copy the shell-script from node_modules if using npm.
 
 ```bash 
-$ curl https://gist.github.com/rnv-opendata/8365b1317505a80359491c2124a05e94 > prepare_env_file.sh
+$ curl https://gist.githubusercontent.com/rnv-opendata/8365b1317505a80359491c2124a05e94/raw/2fc73bdbb1dd4872feff7aa8182c477d01a379cc/prepare_env_file.sh > prepare_env_file.sh
 $ sudo chmod u+rwx prepare_env_file.sh 
 $ ./prepare_env_file.sh > .envs
 ```
 ### On Windows 
 ```bash 
-$ curl https://gist.github.com/rnv-opendata/900d43affca063caed7918f91d9531b5 > prepare_env_file.cmd
+$ curl https://gist.githubusercontent.com/rnv-opendata/900d43affca063caed7918f91d9531b5/raw/38060421063bc4766566e5324af489fbce226cac/prepare_env_file.cmd > prepare_env_file.cmd  
 $ pwsh prepare_env_file.cmd
 ```
+
+## Packaging 
+Wheels for usage as package can be built like this. 
+
+```bash
+python setup.py sdist bdist_wheel
+```
+
 
 # Important Links 
 1. [RNV Data-Hub-API Main Page and Credentials Request](https://www.opendata-oepnv.de/ht/de/organisation/verkehrsunternehmen/rnv/openrnv/api)

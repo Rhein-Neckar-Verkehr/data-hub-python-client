@@ -1,6 +1,6 @@
 import json
 import requests
-from src.BearerAuth import BearerAuth
+from .BearerAuth import BearerAuth
 
 
 class ClientFunctions:

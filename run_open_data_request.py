@@ -1,8 +1,8 @@
 from dotenv import load_dotenv
 import os
 
-from src.ClientFunctions import ClientFunctions
-from src.Constants import EXAMPLE_QUERIES
+from data_hub_python_client.ClientFunctions import ClientFunctions
+from data_hub_python_client.Constants import EXAMPLE_QUERIES
 
 
 def load_options() -> dict:
