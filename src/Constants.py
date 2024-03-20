@@ -1,6 +1,6 @@
 class EXAMPLE_QUERIES:
     """
-    Set of example queries for usage with GraphQL api functions.
+    Set of example queries for usage with GraphQL API functions.
     Mostly from https://github.com/Rhein-Neckar-Verkehr/Data-Hub-API-How-To
     """
 
