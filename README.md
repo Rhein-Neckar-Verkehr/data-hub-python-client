@@ -1,6 +1,8 @@
 # RNV Open Data Client 
 A simple client in python to access the RNV Open Data API.
 
+This readme file contains information about using the client. For detailed documentation on how to use the GraphQL interface, see the documentation [link from here](https://www.opendata-oepnv.de/ht/de/organisation/verkehrsunternehmen/rnv/openrnv/data-hub-api-dokumentationen)
+
 # How to use
 
 Go to the folder python in this directory, and install requirements. In example: 
